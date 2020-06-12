@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<div class="apply" style="background-color:  #173f5f">
+<head>
+<title>Applications</title>
+	<meta charset="UTF-8">
+	<img>
+<img src ="logo.png" class="center">
+
+
+  <div id="header">
+  <h1>Applications</h1>
+
+
+	 <h4>Welcome to our Application page for the academic year 2021. <br>To apply please fill in the information required below</h4>
+<script type="text/javascript">
+function validate()
+{
+	var name=document.getElementById("fname").value;
+	var surnname=document.getElementById("sname").value;
+	var stuGradegrade=document.getElementById("grade").value;
+	var stuId=document.getElementById("id").value;
+	var stuAge=document.getElementById("age").value;
+	var stuNumber=document.getElementById("cNumber").value;
+
+
+if (name.value===" "||surname.value===" "||stuGrade.value===" "||stuId.value===" "||stuAge.value===" "||stuNumber.value===" ") {
+alert ("Please fill in all the required fields");
+return false;
+} else {
+	true;
+}
+}
+</script>
+
+<div id="body">
+<body>
+	   <form onsubmit="return validate()" action="index1.html">
+      <input type="text" name="fname" placeholder="First Name "><br><br>
+      <input type="text" name="sname" placeholder="Last Name"><br><br>
+      <input type="number" name="grade" placeholder="Enter Grade"><br><br>
+     <input type="number" name="id" placeholder="Enter ID"><br><br>
+     <input type="number" name="age" placeholder="Enter Age "><br><br>
+
+			<input type="number" name="cNumber" placeholder="Contact number"><br><br>
+	<input type="radio" name="gender" value="Female"checked>Female
+				<input type="radio" name="gender" value="Male" checked>Male<br><br>
+
+				<input type="radio" name="race" value="African" checked>African
+         	<input type="radio" name="white" value="White" checked>White
+						<input type="radio" name="colored" value="colore" checked>Colored
+							<input type="radio" name="race" value="Other" checked>Other<br><br>
+
+<div id="button">
+
+			<button type="submit">Apply</button>
+		</form>
+</body>
+
+
+</section>
+<!-- Footer section end -->
+<div class="calEnd" id="footerDiv">
+
+
+<div class="footer" style="z-index: 99;">
+<div style="width: 100%; height: 10px; background-color: midnightblue"></div>
+	<p> Address:Mzamomtsha Primary school |
+	49 Valangenyawo Street/P.O Box 40034, Elonwabeni,
+				 Cape Town
+			 ,Western Cape Province
+				 ,7791.
+|	Telephone:021 387 4851
+|	Fax number:086 561 5914
+|	E-mail address: mzamomtshaps@gmail.com</p>
+</div>
+</html>
