@@ -3,6 +3,8 @@
 <head>
 	<title>Mzamomtsha Primary School</title>
 	<meta charset="UTF-8">
+		<script defer src="validate.js"></script>
+
 	<meta name="description" content=" School Site | eCommerce still under construction ">
 	<meta name="keywords" content="SCHOOL SITE, eCommerce, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,6 +104,9 @@
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
 
 </head>
+<body>
+
+
 
 
 	<!-- Page Preloder -->
@@ -115,35 +120,18 @@
 
 	<!-- H section -->
 	<section class="hero-section">
-<div id="navbar">
+		<div id="navbar">
+			<a href="#"><img src="logo1.png" style="width: 40px;height: 40px;"></a>
+			<a href="#history">About Us</a>
+			<a href="#schoolProject">Events</a>
+				<a href="#Application">Applications</a>
+			<a href="#footerDiv">Contacts</a>
+			<div style="width: 100%; height: 10px; background-color: steelblue;z-index: 104;background-attachment: fixed;"></div>
+		
 
-					 <a href="#"><img src="logo1.png" style="width: 40px;height: 40px;"></a>
-		 			<a href="#history">About Us</a>
-		 			<a href="#schoolProject">Events</a>
-		       <a href="apply.html">Applications</a>
-					 <div style="width:100%; height:10px; backgroundColor:steelblue;z-index:104;">
-
-						  <button onclick = "gfg_Run()">
-						             Click here
-						         </button>
-
-										 <script>
-										 var el_up = document.getElementById("navbar");
-						 				var el_down=document.getElementById("navbar");
-						 				el_up.innerHTML = str;
-										el_down.innerHTML=str;
-
-										function changeColor(color) {
-							document.body.style.backgroundColor = color;
-					}	function gfg_Run() {
-							changeColor('yellow');
-							el_down.innerHTML = "Background Color changed";
-					}
-
-
-</script>
-</div>
-		</div>
+<script src="validate.js"></script>
+<button onclick changeColor('red')>Red</button>
+	</div>
 
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="pics/1.jpg">
@@ -264,8 +252,30 @@
 			Share the ethos of our school be being role models in all aspects of school life.</p>
 		</div>
 
+<div>
+		<div class="apply" style="background-color:  #173f5f">
+			<div id="Application">
+				<br><br>
+			</div>
 
 
+		<h2 style="text-align:center">Online Application Form</h2>
+		 <p style="margin:100px;">
+		<div id=error;></div>
+			 <form id="Application Form" action="/" onsubmit="return validate()" method="get">
+			 <label for="First Name">First Name:</label> <input type="text" id="fname" name=firstname><br><br>
+
+			 <label for="Surname">Surname:</label> <input type="text" id="sname" name=surname><br><br>
+
+			 <label for="scontact">Contact Number:</label><input type="number" id="cnumber"name=contact><br><br>
+
+		   <label for="mail">Email Address</label><input type="text" id="email" name=mail><br><br>
+
+				<input type="submit" value="Submit">
+			 </form>
+		<script src="validate.js"></script>
+		</div>
+		</div>
 
 
 	<!-- latest news section -->
